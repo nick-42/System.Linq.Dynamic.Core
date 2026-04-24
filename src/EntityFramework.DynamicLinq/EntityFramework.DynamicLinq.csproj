@@ -3,13 +3,12 @@
 
     <PropertyGroup>
         <AssemblyName>EntityFramework.DynamicLinq</AssemblyName>
-        <AssemblyOriginatorKeyFile>EntityFramework.DynamicLinq.snk</AssemblyOriginatorKeyFile>
         <AssemblyTitle>EntityFramework.DynamicLinq</AssemblyTitle>
         <DefineConstants>EF;EFDYNAMICFUNCTIONS</DefineConstants>
         <Description>Dynamic Linq extensions for EntityFramework which adds Async support</Description>
         <PackageTags>system;linq;dynamic;entityframework;core;async</PackageTags>
         <ProjectGuid>{D3804228-91F4-4502-9595-39584E510000}</ProjectGuid>
-        <TargetFrameworks>net45;net452;net46;netstandard2.1</TargetFrameworks>
+        <TargetFrameworks>netstandard2.1</TargetFrameworks>
         <Version>1.7.$(PatchVersion)</Version>
     </PropertyGroup>
 

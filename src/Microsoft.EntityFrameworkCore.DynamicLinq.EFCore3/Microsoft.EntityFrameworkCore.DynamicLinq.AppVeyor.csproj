@@ -4,13 +4,10 @@
         <AssemblyTitle>Microsoft.EntityFrameworkCore.DynamicLinq</AssemblyTitle>
         <VersionPrefix>1.0.8.12</VersionPrefix>
         <Authors>ZZZ Projects;Stef Heyenrath</Authors>
-        <TargetFrameworks>net451;net46;netstandard1.3;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
         <DefineConstants>$(DefineConstants);EFCORE</DefineConstants>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AssemblyName>Microsoft.EntityFrameworkCore.DynamicLinq</AssemblyName>
-        <AssemblyOriginatorKeyFile>Microsoft.EntityFrameworkCore.DynamicLinq.snk</AssemblyOriginatorKeyFile>
-        <SignAssembly>true</SignAssembly>
-        <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
         <PackageTags>system;linq;dynamic;entityframework;core;async</PackageTags>
         <PackageReleaseNotes>Bugfixes and new Features. For details see the release notes.</PackageReleaseNotes>
         <PackageProjectUrl>https://github.com/StefH/System.Linq.Dynamic.Core</PackageProjectUrl>
@@ -35,18 +32,6 @@
         <IncludeSymbols>True</IncludeSymbols>
         <PathMap>$(MSBuildProjectDirectory)=/</PathMap>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    </PropertyGroup>
-
-    <PropertyGroup Condition="'$(TargetFramework)' == 'uap10.0'">
-        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-        <NugetTargetMoniker>UAP,Version=v10.0</NugetTargetMoniker>
-        <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-        <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
-        <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
-        <TargetFrameworkIdentifier>.NETCore</TargetFrameworkIdentifier>
-        <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-        <DefineConstants>$(DefineConstants);WINDOWS_UWP;UAP10_0</DefineConstants>
-        <LanguageTargets>$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets</LanguageTargets>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
@@ -104,10 +89,5 @@
 
     <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
-    </ItemGroup>
-
-    <ItemGroup Condition=" '$(TargetFramework)' == 'uap10.0' ">
-        <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.10" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.0" />
     </ItemGroup>
 </Project>

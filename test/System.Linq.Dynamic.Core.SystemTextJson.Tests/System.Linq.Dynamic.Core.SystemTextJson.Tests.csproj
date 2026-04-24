@@ -1,12 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
     <PropertyGroup>
         <Authors>Stef Heyenrath</Authors>
-        <TargetFrameworks>net6.0;net8.0;net10.0</TargetFrameworks>
+        <TargetFrameworks>net10.0</TargetFrameworks>
         <DebugType>full</DebugType>
-        <SignAssembly>True</SignAssembly>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
-        <AssemblyOriginatorKeyFile>../../src/System.Linq.Dynamic.Core/System.Linq.Dynamic.Core.snk</AssemblyOriginatorKeyFile>
         <ProjectGuid>{D5844AE4-53FA-4C8A-9D52-AD213FD0CA1E}</ProjectGuid>
     </PropertyGroup>
 
